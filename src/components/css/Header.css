@@ -1,0 +1,24 @@
+
+header{
+    padding: 0 40px 0 40px;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.nav-items{
+    display: flex;
+    }
+
+.menu-item {
+    list-style-type: none;
+    margin-left: 50px;
+    }
+
+.dr-login{
+    padding: 5px;
+    
+}

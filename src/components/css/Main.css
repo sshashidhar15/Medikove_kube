@@ -1,0 +1,50 @@
+
+main{
+    padding: 0 40px 0 40px;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px
+}
+
+form{
+    margin-left: auto;
+    padding: 30px;
+    border: solid;
+    border-width: 10px;
+    border-color: lightgray;
+    background: lightgreen;
+    width: 40%;
+}
+
+.form-input{   
+    fill: none;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.form-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-button{
+    cursor: pointer;
+}
+.hero-text{
+    font-size: 40px;
+}
+
+.hero-sub-text{
+    font-size: 30px;
+    font-weight:normal;
+}
