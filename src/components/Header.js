@@ -1,6 +1,7 @@
 import React from "react"
-import ReactDOM from "react-dom"
+
 import "../components/css/Header.css"
+import {Link, Switch, Route} from "react-router-dom"
 
 
 function Header(){
@@ -10,12 +11,16 @@ function Header(){
             <h2 ClassName="logo">Medikove</h2>
 
                 <ul className="nav-items">
-                    <li className="menu-item">Services</li>
-                    <li className="menu-item">Gear</li>
-                    <li className="menu-item">Expertise</li>
-                    <li className="menu-item">Contact</li>
+                
+                 <li> <Link to ="/" className="current-page">Services </Link></li>
+                    <li> <Link to ="/gear" className="current-page">Gear </Link></li> 
+                    <li> <Link to ="/expertise" className="current-page">Expertise </Link></li> 
+                    <li> <Link to ="/contactus" className="current-page">Contact</Link></li> 
+
+                    <li> <Link to ="/doctorlogin" className="dr-login">  Doctors Login </Link></li>
+                
                 </ul>
-                <button className="dr-login">Doctors Login</button>
+                
            </nav>
         </header>
     )
