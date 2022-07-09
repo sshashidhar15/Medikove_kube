@@ -193,6 +193,13 @@ font-size: 15px;
     margin-left: 12em;
 }
 
+.process-right-flow .grey{
+    background-color: #464646;
+    color: #ffffff;
+}
+
+
+
 /*Clinics styling */
 
 .clinics-container{
@@ -201,8 +208,24 @@ font-size: 15px;
     padding: 2em;
 }
 
+.container-logos{
+    padding: 0;
+    list-style: none;
+}
+
+
 .clinic-logos{
-    margin-top:2em
+    margin-top:2em;
+
+}
+
+.consultation-button{
+    border: #48508E;
+
+    padding: 8px 20px 8px 20px;
+    color: #FFF;
+    border-radius: 5px;
+    margin:auto;
 }
 .clinic-text{
     text-align: center;

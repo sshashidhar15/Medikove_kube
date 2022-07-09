@@ -34,7 +34,6 @@ function Gear()
                       backgroundImage: "url(../components/images/hero.png)",
                     }}>
                     
-                  
                   </div>
   
                   <div className="container-fluid md-3">
@@ -46,11 +45,11 @@ function Gear()
                     
                       <div className="col-md-9">
                         
-                        <div className="row g-3 mt-0">
+                        <div className="row mt-0">
                           {item.view === "grid" &&
                             item.currentProducts.map((product, idx) => {
                               return (
-                                <div key={idx} className="col-md-4">
+                                <div key={idx} className="col-md-3">
                                   <CardProductGrid data={product} />
                                  </div>
                               );
@@ -63,6 +62,6 @@ function Gear()
                   </div>
                 </React.Fragment>
               )
-}
-          
+}     
+
 export default Gear

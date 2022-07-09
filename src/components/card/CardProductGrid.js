@@ -33,7 +33,7 @@ function CardProductGrid(props) {
           -
           {product.discountPercentage > 0
             ? product.discountPercentage + "%"
-            : "$" + product.discountPrice}
+            : "INR" + product.discountPrice}
         </span>
       )}
       <div className="card-body">
@@ -43,17 +43,19 @@ function CardProductGrid(props) {
           </Link>
         </h6>
         <div className="my-2">
-          <span className="fw-bold h5">${product.price}</span>
+          <span className="fw-bold h5">Rs {product.price}</span>
           {product.originPrice > 0 && (
-            <del className="small text-muted ms-2">${product.originPrice}</del>
+            <del className="small text-muted ms-2">{product.originPrice}</del>
           )}
+          <br>
+          </br>
           <span className="ms-2">
             {Array.from({ length: product.star }, (_, key) => (
               <IconStarFill className="text-warning me-1" key={key} />
             ))}
           </span>
         </div>
-        <div className="btn-group  d-flex" role="group">
+        <div className="btn-group  ms-8" role="group">
           <button
             type="button"
             className="btn btn-sm btn-primary"
@@ -61,13 +63,13 @@ function CardProductGrid(props) {
           >
             <FontAwesomeIcon icon={faCartPlus} />
           </button>
-          <button
+          {/*<button
             type="button"
             className="btn btn-sm btn-outline-secondary"
             title="Add to wishlist"
           >
-            <FontAwesomeIcon icon={faHeart} />
-          </button>
+           <FontAwesomeIcon icon={faHeart} /> 
+            </button> */}
         </div>
       </div>
     </div>

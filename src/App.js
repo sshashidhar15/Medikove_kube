@@ -9,6 +9,7 @@ import Clinic from "./components/Clinic"
 import Footer from "./components/Footer"
 import Testimonial from "./components/Testimonial"
 import Gear from "./components/Gear"
+import Expertise from "./components/Expertise"
 import ContactUs from "./components/ContactUs"
 import DoctorLogin from "./components/Auth/DoctorLogin"
 import Login from "./components/Auth/Login"
@@ -63,9 +64,16 @@ const [token,setToken] = useState();
               
         <Route path="/gear">
               <Header />
-                <Gear />
+              <Gear />
                 <Footer />
           </Route>
+
+          <Route path="/Expertise">
+              <Header />
+                <Expertise />
+                <Footer />
+          </Route>
+              
               
           <Route path="/doctorlogin">
                 <Header />
