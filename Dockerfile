@@ -1,6 +1,6 @@
 FROM node :16.14.2-buster as build
 
-WORKDIR /MEDIKOVE
+WORKDIR /medikove
 
 COPY package.json package.json
 COPY package-lock.json package-lock.json
@@ -14,7 +14,7 @@ RUN npm run build
 
 FROM nginx:1.20-alpine as prod
 
-COPY --from=build /MEDIKOVE/build /usr/share/nginx/html
+COPY --from=build /medikove/build /usr/share/nginx/html
 
 EXPOSE 80
 
