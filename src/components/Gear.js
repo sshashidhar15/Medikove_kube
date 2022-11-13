@@ -8,6 +8,7 @@ import CardProductGrid from "./card/CardProductGrid"
 import FilterCategory from "./card/FilterCategory"
 import { PersonPlus } from "react-bootstrap-icons";
 import Cart from "./cart/Cart";
+import { prettyDOM } from "@testing-library/react";
 
 
     
@@ -15,8 +16,8 @@ function Gear(props)
 {
 
   let products = data.products;
-  let prdData = {}
   let count = 0
+  
 
 
     const[item,setItem] = React.useState({
@@ -62,15 +63,41 @@ function Gear(props)
     //       })
     //     }
 
-     function addCart(id){
-      console.log(id)
-      if (item.id === id){
-        console.log(item.name)
-
-      }
-      return setItem(item)
-         
+     function addCart(id)
+     {
+      let globalCart = [{id:1}]
+      let kid =[]
+      let localCart = {}
+      let t = 0
+      item.currentProducts.map((prd) => {
+          if (prd.id===id){
+            localCart = prd
+            count = count + 1
+            t = count
+            localCart['count'] = t 
+            // props.countHandle(prd)
+            kid.push(id)
+          }
+          
+          globalCart.map(chkPrd => {
+            //console.log(prd.id)
+            if(prd.id === chkPrd.id){
+              console.log("do nothing")
             }
+            else{
+              globalCart.push(localCart)
+              count = 0
+              t = 0
+            }
+          })
+         
+         
+    })
+    
+    
+    console.log(globalCart)
+  }
+    
     
 
 

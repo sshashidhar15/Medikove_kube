@@ -39,12 +39,12 @@ const [token,setToken] = useState();
 /* cart functionality */
 const [count,setCount] = React.useState(0)
 const [number,setNumber] = React.useState(0)
-const [Prod,setProd] = React.useState({})
+const [Prod,setProd] = React.useState([])
 
 function countCart(productData){
   // {console.log(count)}
-  {console.log(productData)}
-  // setNumber(count)
+  // {console.log(productData)}
+  setProd(productData)
 }
 
     
@@ -56,7 +56,7 @@ function countCart(productData){
         
 
         <Route exact path="/">
-                  <Header number = {number}/>
+                  <Header number = {count}/>
                   <Main />
                   <Process />
                   <Clinic />
