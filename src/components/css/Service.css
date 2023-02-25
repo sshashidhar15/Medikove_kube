@@ -1,0 +1,80 @@
+.row{
+    margin: 20px;
+}
+
+
+.service-one{
+    background-color:#f3f3f3;
+    padding: 2em;
+   
+
+}
+
+
+.feature-text{
+    margin-top: 4em;
+    justify-content: space-between;
+    width:50%
+}
+
+
+
+
+
+
+
+
+
+.ortho-text{
+    font-size:3em;
+}
+.ortho-sub-text{
+    font-size:20px;
+}
+
+.service-one-pt{
+  
+    list-style-type: none;
+    
+   
+}
+
+.service-one-pt::before{
+/* 
+    background:url(../images/tick_1.png);
+    transform: scale(.10); */
+
+    display:inline-block;
+
+    height:30px;
+    width:30px;
+    margin-top:8px;
+    margin-right: 15px;
+    content: "";
+    background:url(../images/tick_1.png) no-repeat 0 0;
+    background-size: 20px 20px;
+    /* align-items: center;  */
+    vertical-align: middle;
+}
+
+.ortho-card{
+
+
+/* background: #FFFFFF; */
+width:100%;
+height:80%;
+border: 1px solid #000000;
+margin-bottom: 10%;
+box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.15);
+/* border-radius: 10px; */
+}
+
+.list-item{
+    list-style-type: none;
+    font-weight:500;
+    font-size:1em;
+    margin-bottom:0.25em;
+    margin-left:0.5em ;
+}
+
+

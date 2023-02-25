@@ -1,17 +1,16 @@
 
 body{
-  color: #404040;
-}
 
+  margin:0px;
+  color: #000;
+  
+}
 .feature-list{
   background: #f3f3f3;
   margin:0;
   display: flex;
   padding:3em 6em;
   justify-content: space-between;
-
-
-
 }
 
 @media (max-width:650px){

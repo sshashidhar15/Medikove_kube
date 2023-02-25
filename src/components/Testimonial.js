@@ -12,7 +12,6 @@ function Testimonial(){
       <div>
   
         <section className="testimonial">
-
           <div className="testimonial-container">
              
              <h2 className="testimonial-text"> Patient Success Stories</h2>
@@ -54,8 +53,6 @@ function Testimonial(){
                 </div>           
           </div> 
       </div>
-             
-
         </section>
       </div>
     )

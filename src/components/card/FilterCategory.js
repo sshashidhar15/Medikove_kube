@@ -1,61 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../components/css/Gear.css"
 
 const FilterCategory = (props) => {
   return (
-    <div className="card mb-3">
+  <div>    
+    <div className="card mt-100">
       <div className="card-header fw-bold text-uppercase">
         Categories
       </div>
       <ul className="list-group list-group-flush">
         <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            Activities of Daily Living
+          <Link to="/gear" className="text-decoration-none stretched-link">
+            Orthopaedics Physiotherapy
           </Link>
         </li>
         <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            Exercise Equipment
+          <Link to="/gear" className="text-decoration-none stretched-link">
+            Cardio Respiratory Equipment
           </Link>
         </li>
         <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            Physical Therapy Products
+          <Link to="/gear" className="text-decoration-none stretched-link">
+            All Products
           </Link>
         </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-           Hand Therapy
-          </Link>
-        </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            Ambulation Training Equipment
-          </Link>
-        </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            Cardio Respiratory Exercise
-          </Link>
-        </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-          Flexibility & Stretching Equipment
-          </Link>
-        </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-          Treatment Tables
-          </Link>
-        </li>
-        <li className="list-group-item">
-          <Link to="/" className="text-decoration-none stretched-link">
-            Medical Diagnostics
-          </Link>
-        </li>
+        
       </ul>
     </div>
-  );
+</div>
+  )
 };
 
 export default FilterCategory;

@@ -1,0 +1,28 @@
+.equipment{
+    padding: 3em;
+    background-color:#fff; ;
+   
+}
+.equip-text{
+    text-align: center;
+    font-size:3em;
+}
+
+.equip-sub-text{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.prod-one{
+    width:8em;
+    height:8em;
+}
+
+.products-bk{
+ 
+    margin-left:26em;
+    
+}

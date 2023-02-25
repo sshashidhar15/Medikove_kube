@@ -4,20 +4,15 @@ import { ReactComponent as IconStarFill } from "bootstrap-icons/icons/star-fill.
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
 import Header from "../Header"
+import "../../components/css/Gear.css"
 
 function CardProductGrid(props) {
 
-  const product = props.data
-
-
-  
+  const { product, onAdd } = props;
 
   return(
-  <div className="card h-100">
-    {/* {console.log(product.id)} */}
- 
-  
-      <img src={product.img}  className="card-img-top" alt="..." / >
+  <div className="card h-80 prod-height"> 
+      <img src={product.img}  className="card-img-top prod-img" alt="..." / >
       <div className="card-body">
         <h6 className="card-subtitle mb-2">
           <Link to={product.link} className="text-decoration-none">
@@ -29,32 +24,23 @@ function CardProductGrid(props) {
           {product.originPrice > 0 && (
             <del className="small text-muted ms-2">{product.originPrice}</del>
           )}
-          <br>
-          </br>
-          <span className="ms-2">
-            {Array.from({ length: product.star }, (_, key) => (
-              <IconStarFill className="text-warning me-1" key={key} />
-            ))}
-          </span>
+      
         </div>
-        <div className="btn-group  ms-8" role="group">
-          <button
+        
+           <button
             type="button"
-            className="btn btn-sm btn-primary"
+            className="btn btn-sm btn-secondary"  
             title="Add to cart"
-            onClick={props.addCart}>
-          
-          
-            
-            <FontAwesomeIcon icon={faCartPlus}/>
-
+            onClick={() => onAdd(product)}
+            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">      
+            {/* <FontAwesomeIcon icon={faCartPlus} ms-3 /> */}
             Add to Cart
           </button>
-       
-
         </div>
-      </div>
-    </div>
+        
+  
+  
+      </div>   
   );
 
 } 

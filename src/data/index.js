@@ -1,282 +1,273 @@
 export const data = {
-    banner: [
-      {
-        to: "/link",
-        img: "../../images/banner/Banner_2.webp",
-        title: "First slide label",
-        description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
-      },
-      {
-        to: "/link",
-        img: "../../images/banner/Banner_3.webp",
-        title: "Second slide label",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        to: "/link",
-        img: "../../images/banner/Banner_1.webp",
-        title: "Third slide label",
-        description: " Praesent commodo cursus magna, vel scelerisque nisl.",
-      },
-    ],
-    iconProducts: [
-      {
-        to: "/product/detail",
-        img: "IconLaptop",
-        title: "Laptop",
-        text: " Upto 20% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-primary",
-      },
-      {
-        to: "/product/detail",
-        img: "IconHeadset",
-        title: "Headset",
-        text: " Upto 50% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-secondary",
-      },
-      {
-        to: "/product/detail",
-        img: "IconPhone",
-        title: "Phone",
-        text: " Upto 20% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-danger",
-      },
-      {
-        to: "/product/detail",
-        img: "IconTv",
-        title: "TV",
-        text: " Upto 25% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-warning",
-      },
-      {
-        to: "/product/detail",
-        img: "IconDisplay",
-        title: "Display",
-        text: " Upto 30% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-info",
-      },
-      {
-        to: "/product/detail",
-        img: "IconHdd",
-        title: "HDD",
-        text: " Upto 15% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-success",
-      },
-      {
-        to: "/product/detail",
-        img: "IconUpcScan",
-        title: "UPC Scan",
-        text: " Upto 45% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-muted",
-      },
-      {
-        to: "/product/detail",
-        img: "IconTools",
-        title: "Tools",
-        text: " Upto 50% off",
-        tips: "Sony, Dell, Lenovo",
-        cssClass: "text-primary",
-      },
-    ],
-    products: [
-   
-      {
+    prod: {
+      ortho:[
+        {
         id: 1,
-        sku: "FAS-01",
-        link: "/product/detail",
-        name: "Dynamometer for manual Muscle Testing",
-        img: "../../images/products/Dynamometer_for_manual_Muscle_Testing.webp",
-        price: 180,
-        // originPrice: 200,
-        // discountPrice: 20,
-        // discountPercentage: 10,
+            link: "/product/detail",
+            name: "Ankle air splint",
+            img: "../../images/products/ortho/ankle/Ankle air splint.png",
+            price: 180,
             isNew: true,
-        // isHot: false,
-        // star: 4,
-        // isFreeShipping: true,
-        description:
-          "Nulla sodales sit amet orci eu vehicula. Curabitur metus velit, fermentum a velit ac, sodales egestas lacus. Etiam congue velit vel luctus dictum. Pellentesque at pellentesque sapien.",
+            description:
+              "Nulla sodales sit",
+        },
+        {
+          id: 2,
+              link: "/product/detail",
+              name: "Ankle binder",
+              img: "../../images/products/ortho/ankle/Ankle binder.png",
+              price: 180,
+              isNew: true,
+              description:
+                "Nulla sodales sit",
+          },
+          {
+            id: 3,
+                link: "/product/detail",
+                name: "Ankle foot orthoses",
+                img: "../../images/products/ortho/ankle/Ankle foot orthoses.png",
+                price: 180,
+                isNew: true,
+                description:
+                  "Nulla sodales sit",
+            },
+            {
+              id: 4,
+                  link: "/product/detail",
+                  name: "TED Stockings compression garments",
+                  img: "../../images/products/ortho/ankle/TED Stockings compression garments.png",
+                  price: 180,
+                  isNew: true,
+                  description:
+                    "Nulla sodales sit",
+              },
+
+              {
+                id: 5,
+                    link: "/product/detail",
+                    name: "Patellar tendon bearing Brace- Sarmiento type",
+                    img: "../../images/products/ortho/ankle/Patellar tendon bearing Brace- Sarmiento type.png",
+                    price: 180,
+                    isNew: true,
+                    description:
+                      "Nulla sodales sit",
+                },
+                {
+                  id: 6,
+                      link: "/product/detail",
+                      name: "PTB brace with foot support",
+                      img: "../../images/products/ortho/ankle/PTB brace with foot support.png",
+                      price: 180,
+                      isNew: true,
+                      description:
+                        "Nulla sodales sit",
+                  },
+                  {
+                    id: 7,
+                        link: "/product/detail",
+                        name: "Arm covers",
+                        img: "../../images/products/ortho/arm/arm covers.png",
+                        price: 180,
+                        isNew: true,
+                        description:
+                          "Nulla sodales sit",
+                    },
+                    {
+                      id: 8,
+                          link: "/product/detail",
+                          name: "Dynamic Hand Splint",
+                          img: "../../images/products/ortho/arm/Dynamic Hand Splint.png",
+                          price: 180,
+                          isNew: true,
+                          description:
+                            "Nulla sodales sit",
+                      },
+
+                      {
+                        id: 9,
+                            link: "/product/detail",
+                            name: "Elastic wrist splint",
+                            img: "../../images/products/ortho/arm/Elastic wrist splint.png",
+                            price: 180,
+                            isNew: true,
+                            description:
+                              "Nulla sodales sit",
+                        },
+
+                        {
+                          id: 10,
+                              link: "/product/detail",
+                              name: "Elbow Brace",
+                              img: "../../images/products/ortho/arm/Elbow Brace.png",
+                              price: 180,
+                              isNew: true,
+                              description:
+                                "Nulla sodales sit",
+                          },
+                          {
+                            id: 11,
+                                link: "/product/detail",
+                                name: "Finger extension splint",
+                                img: "../../images/products/ortho/arm/Finger extension splint.png",
+                                price: 180,
+                                isNew: true,
+                                description:
+                                  "Nulla sodales sit",
+                            },
+
+                            {
+                              id: 12,
+                                  link: "/product/detail",
+                                  name: "Lumbosacral Corset",
+                                  img: "../../images/products/ortho/back/Lumbosacral Corset.png",
+                                  price: 180,
+                                  isNew: true,
+                                  description:
+                                    "Nulla sodales sit",
+                              },
+
+                              {
+                                id: 13,
+                                    link: "/product/detail",
+                                    name: "Milwaukee Brace – CTLSO",
+                                    img: "../../images/products/ortho/back/Milwaukee Brace – CTLSO.png",
+                                    price: 180,
+                                    isNew: true,
+                                    description:
+                                      "Nulla sodales sit",
+                                },
+
+                                {
+                                  id: 14,
+                                      link: "/product/detail",
+                                      name: "Knee cap",
+                                      img: "../../images/products/ortho/knee/Knee cap.png",
+                                      price: 180,
+                                      isNew: true,
+                                      description:
+                                        "Nulla sodales sit",
+                                  },
+
+                                  {
+                                    id: 15,
+                                        link: "/product/detail",
+                                        name: "Knee Immobilizer",
+                                        img: "../../images/products/ortho/knee/Knee Immobilizer.png",
+                                        price: 180,
+                                        isNew: true,
+                                        description:
+                                          "Nulla sodales sit",
+                                    },
+
+                                    {
+                                      id: 16,
+                                          link: "/product/detail",
+                                          name: "Cervical soft collar",
+                                          img: "../../images/products/ortho/neck/Cervical soft collar.png",
+                                          price: 180,
+                                          isNew: true,
+                                          description:
+                                            "Nulla sodales sit",
+                                      },
+                                      {
+                                        id: 17,
+                                            link: "/product/detail",
+                                            name: "Shoulder immobilizer",
+                                            img: "../../images/products/ortho/shoulder/Shoulder immobilizer.png",
+                                            price: 180,
+                                            isNew: true,
+                                            description:
+                                              "Nulla sodales sit",
+                                        },
+                                      ],
+
+      cardio:[
+          {
+            id: 1,
+            link: "/product/detail",
+            name: "Acapella and flutter device",
+            img: "../../images/products/cardio/Acapella and flutter device.png",
+            price: 180,
+            isNew: true,
+            description:
+              "Nulla sodales sit",
+
+        },
+
+        {
+          id: 2,
+          link: "/product/detail",
+          name: "Bubble PEP Physio device",
+          img: "../../images/products/cardio/Bubble PEP Physio device.png",
+          price: 180,
+          isNew: true,
+          description:
+            "Nulla sodales sit",
+
       },
-      {
-        id: 2,
-        sku: "FAS-02",
-        link: "/product/detail",
-        name: "Electrotherapy Ultrasound",
-        img: "../../images/products/Electrotherapy_Ultrasound.webp",
-        price: 475,
-        // originPrice: 0,
-        // discountPrice: 0,
-        // discountPercentage: 0,
-          isNew: false,
-        // isHot: false,
-        // star: 3,
-        // isFreeShipping: true,
-        description:
-          "Maecenas suscipit volutpat gravida. Nulla hendrerit nisi a lectus blandit aliquam. Integer enim magna, consequat sed justo nec, auctor sagittis urna.",
-      },
+
       {
         id: 3,
-        sku: "FAS-03",
         link: "/product/detail",
-        name: "Skin Response Monitoring",
-        img: "../../images/products/Skin_Response_Monitoring.webp",
-        price: 1900,
-        // originPrice: 2000,
-        // discountPrice: 100,
-        // discountPercentage: 0,
-           isNew: true,
-        // isHot: false,
-        // star: 2,
-        // isFreeShipping: true,
+        name: "Cornet device",
+        img: "../../images/products/cardio/Cornet device.png",
+        price: 180,
+        isNew: true,
         description:
-          "Vivamus sapien eros, molestie sed lacus vitae, lacinia volutpat ipsum. Nam sollicitudin lorem eget ornare vulputate.",
-      },
-      {
-        id: 4,
-        sku: "FAS-04",
-        link: "/product/detail",
-        name: "Manual Muscle Tester",
-        img: "../../images/products/Manual_Muscle_Tester.webp",
-        price: 10,
-        // originPrice: 0,
-        // discountPrice: 0,
-        // discountPercentage: 0,
-           isNew: false,
-        // isHot: false,
-        // star: 0,
-        // isFreeShipping: false,
-        description:
-          "Morbi lobortis velit non consectetur porta.|Duis auctor risus ac purus vehicula tempor.|Fusce at ipsum a leo tempor malesuada.|Curabitur tincidunt justo vel volutpat suscipit.",
-      },
-      {
-        id: 5,
-        sku: "FAS-05",
-        link: "/product/detail",
-        name: "Manual Muscle Tester",
-        img: "../../images/products/Manual_Muscle_Tester.webp",
-        price: 10,
-        // originPrice: 0,
-        // discountPrice: 0,
-        // discountPercentage: 0,
-        // isNew: false,
-           isHot: false,
-        // star: 0,
-        // isFreeShipping: false,
-        description:
-          "Morbi lobortis velit non consectetur porta.|Duis auctor risus ac purus vehicula tempor.|Fusce at ipsum a leo tempor malesuada.|Curabitur tincidunt justo vel volutpat suscipit.",
-      },
-      {
-        id: 6,
-        sku: "FAS-06",
-        link: "/product/detail",
-        name: "Manual Muscle Tester",
-        img: "../../images/products/Manual_Muscle_Tester.webp",
-        price: 10,
-        // originPrice: 0,
-        // discountPrice: 0,
-        // discountPercentage: 0,
-           isNew: false,
-        // isHot: false,
-        // star: 0,
-        // isFreeShipping: false,
-        description:
-          "Morbi lobortis velit non consectetur porta.|Duis auctor risus ac purus vehicula tempor.|Fusce at ipsum a leo tempor malesuada.|Curabitur tincidunt justo vel volutpat suscipit.",
-      },
-      {
-        id: 7,
-        sku: "FAS-06",
-        link: "/product/detail",
-        name: "Manual Muscle Tester",
-        img: "../../images/products/Manual_Muscle_Tester.webp",
-        price: 10,
-        // originPrice: 0,
-        // discountPrice: 0,
-        // discountPercentage: 0,
-           isNew: false,
-        // isHot: false,
-        // star: 0,
-        // isFreeShipping: false,
-        description:
-          "Morbi lobortis velit non consectetur porta.|Duis auctor risus ac purus vehicula tempor.|Fusce at ipsum a leo tempor malesuada.|Curabitur tincidunt justo vel volutpat suscipit.",
-      },
-      {
-        id: 8,
-        sku: "FAS-06",
-        link: "/product/detail",
-        name: "Manual Muscle Tester",
-        img: "../../images/products/Manual_Muscle_Tester.webp",
-        price: 10,
-        // originPrice: 0,
-        // discountPrice: 0,
-        // discountPercentage: 0,
-           isNew: false,
-        // isHot: false,
-        // star: 0,
-        // isFreeShipping: false,
-        description:
-          "Morbi lobortis velit non consectetur porta.|Duis auctor risus ac purus vehicula tempor.|Fusce at ipsum a leo tempor malesuada.|Curabitur tincidunt justo vel volutpat suscipit.",
-      }   
+          "Nulla sodales sit",
+
+    },
+  
+    {
+      id: 4,
+      link: "/product/detail",
+      name: "Cycle Ergometer",
+      img: "../../images/products/cardio/Cycle Ergometer.png",
+      price: 180,
+      isNew: true,
+      description:
+        "Nulla sodales sit",
+
+  },
+
+  {
+    id: 5,
+    link: "/product/detail",
+    name: "Incentive Spirometry",
+    img: "../../images/products/cardio/Incentive Spirometry.png",
+    price: 180,
+    isNew: true,
+    description:
+      "Nulla sodales sit",
+
+},
+
+{
+  id: 6,
+  link: "/product/detail",
+  name: "Positive expiratory pressure device",
+  img: "../../images/products/cardio/Positive expiratory pressure device.png",
+  price: 180,
+  isNew: true,
+  description:
+    "Nulla sodales sit",
+
+},
+
+{
+  id: 7,
+  link: "/product/detail",
+  name: "Treadmill",
+  img: "../../images/products/cardio/Treadmill.png",
+  price: 180,
+  isNew: true,
+  description:
+    "Nulla sodales sit",
+
+},
+
+    
+    
     ],
-    blogBanner: [
-      {
-        to: "/blog/detail",
-        img: "../../images/blog/nature-1.webp",
-        title: "First slide label",
-        description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
-      },
-      {
-        to: "/blog/detail",
-        img: "../../images/blog/nature-2.webp",
-        title: "Second slide label",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        to: "/blog/detail",
-        img: "../../images/blog/nature-3.webp",
-        title: "Third slide label",
-        description: "Praesent commodo cursus magna, vel scelerisque nisl.",
-      },
-    ],
-    blogList: [
-      {
-        to: "/blog/detail",
-        img: "../../images/blog/nature-1.webp",
-        title:
-          "It is a long established fact that a reader will be distracted by the readable content",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        publishDate: "Jul 05, 2020",
-        tags: ["Branding", "Design"],
-        commentCount: 2,
-      },
-      {
-        to: "/blog/detail",
-        img: "../../images/blog/nature-2.webp",
-        title:
-          "Contrary to popular belief, Lorem Ipsum is not simply random text",
-        description:
-          "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        publishDate: "Aug 05, 2020",
-        tags: ["Branding", "Design"],
-        commentCount: 3,
-      },
-      {
-        to: "/",
-        img: "../../images/blog/nature-3.webp",
-        title: "The standard chunk of Lorem Ipsum used since the 1500s",
-        description:
-          "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.",
-        publishDate: "Sep 05, 2020",
-        tags: ["Branding", "Design"],
-        commentCount: 4,
-      },
-    ],
-  };
+        }};
   

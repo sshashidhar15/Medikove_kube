@@ -1,0 +1,33 @@
+/* service two */
+
+.service-two{
+    background-color:white;
+    padding: 2em;
+    margin-bottom: 0px;
+
+}
+
+.service-two-pt::after{
+    /* 
+        background:url(../images/tick_1.png);
+        transform: scale(.10); */
+    
+        display:inline-block;
+    
+        height:30px;
+        width:30px;
+        margin-top:8px;
+        margin-left: 15px;
+        content: "";
+        background:url(../images/tick_1.png) no-repeat 0 0;
+        background-size: 20px 20px;
+        /* align-items: center;  */
+        vertical-align: middle;
+    }
+
+    .service-two-pt{
+  
+        list-style-type: none;
+        
+       
+    }

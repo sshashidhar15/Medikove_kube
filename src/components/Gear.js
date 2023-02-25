@@ -1,27 +1,26 @@
 import React from "react"
 import { lazy} from "react";
-import { data } from "../data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { data } from "../data";
 
 import CardProductGrid from "./card/CardProductGrid"
-
 import FilterCategory from "./card/FilterCategory"
-import { PersonPlus } from "react-bootstrap-icons";
-import Cart from "./cart/Cart";
-import { prettyDOM } from "@testing-library/react";
+import "../components/css/Gear.css"
 
 
-    
 function Gear(props)
 {
 
-  let products = data.products;
+
+
+  const {products,onAdd,onRemove} = props;
+  let orthoProduct = products.prod.ortho
+  let cardioProduct = products.prod.cardio
+
   let count = 0
   
-
-
     const[item,setItem] = React.useState({
-        currentProducts: products.slice(0,9),
+        orthoProducts: orthoProduct,
+        cardioProducts: cardioProduct,
         currentPage: null,
         totalPages: null,
         totalItems: 0,
@@ -29,39 +28,6 @@ function Gear(props)
         cart:0
       })
 
-// const [cart,setCart] = React.useState(0)
-
-// function addCart(id){
-//     setItem(prevCart => {
-//       return prevCart.currentProducts.map((prd)=> {
-//         return prd.id==id ? {...CardProductGrid}:CardProductGrid
-//       })  
-//     })
-
-//       // props.countHandle(item.cart)
-//  }
-
-// function addCart(id){
-//   {console.log(id)}
-//   setItem(prevCart => {
-//     return prevCart.currentProducts.map((prd) => {
-//       return prd.id===id && props.countHandle(prd)
-//     })
-//       })
-
-//     }
-
-    // function addCart(id){
-    //   {console.log(id)}
-    //   setItem(prevCart => {
-    //           prevCart
-             
-    //         //  return prevCart.currentProducts.map((prd) => {prd}
-    //         //     //  return prd.id===id ? {...prevCart.currentProducts}:prevCart
-    //         //     //     // {props.countHandle(item)}   
-            
-    //       })
-    //     }
 
      function addCart(id)
      {
@@ -75,7 +41,6 @@ function Gear(props)
             count = count + 1
             t = count
             localCart['count'] = t 
-            // props.countHandle(prd)
             kid.push(id)
           }
           
@@ -94,41 +59,35 @@ function Gear(props)
          
     })
     
-    
     console.log(globalCart)
   }
     
-    
-
-
-    // props.countHandle(item.cart)
- 
-
-
     return (   
-                <React.Fragment>
-                  {/* <div
-                    className="p-5 bg-primary bs-cover"
-                    style={{
-                      backgroundImage: "url(../components/images/hero.png)",
-                    }}>                    
-                  </div> */}
-  
+                  
                   <div >
                     <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-md-3 category">
                         <FilterCategory />   
                       </div>
                     
                     
-                      <div className="col-md-9">
-                        
-                        <div className="row mt-4">
+                      <div className="col-md-9 mt-5">    
+                        <div className="row">
                           {item.view === "grid" &&
-                            item.currentProducts.map((product, idx) => {
+                            item.orthoProducts.map((product, idx) => {
                               return (
                                 <div key={idx} className="col-md-3">
-                                  <CardProductGrid data={product} addCart={() => addCart(product.id)}/>
+                                  <CardProductGrid product={product} onAdd={onAdd}/>
+                                 </div>
+                              );
+                            
+                            })}
+
+                            {item.view === "grid" &&
+                            item.cardioProducts.map((product, idx) => {
+                              return (
+                                <div key={idx} className="col-md-3">
+                                  <CardProductGrid key={product.id} product={product} onAdd={onAdd} onRemove={onRemove}/>
                                  </div>
                               );
                             
@@ -137,10 +96,9 @@ function Gear(props)
                         </div>
                      
                       </div>
-                    </div>
-                    
+                    </div> 
                   </div>
-                </React.Fragment>
+                
               )
 }     
 

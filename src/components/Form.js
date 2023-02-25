@@ -4,12 +4,13 @@ import "../components/css/Main.css"
 
 function Form()
 {
-
     const [formData,setFormData] = React.useState({
         fullName:"",
         mobileNumber:"",
         email:"",
-        timeDate:""
+        timeDate:"",
+        city:"",
+        comments:""
     })
 
 console.log(formData)
@@ -33,14 +34,20 @@ console.log(formData)
     
     return (
 
+<div>  
+    
+
         <div className="main-right">
          <form onSubmit = {handleSubmit} action="https://formsubmit.co/s.shashidhar15@gmail.com" method="POST">       
-            <h3 className="form-text"> Book your free consultation</h3>
-            <input type="hidden" name="_next" value="http://localhost:3001/index.html"></input>
+            <h2 className="form-text"> Schedule an Appointment</h2>
+            <input type="hidden" name="_next" value="http://localhost:3001/"></input>
+            <input type="hidden" name="_autoresponse" 
+            value="Hang on your consultation is booked and will get a call at the scheduled time please">
+            </input>
+           
           
-          <div className="form-container">
+        <div className="form-container">
           <label>Your Full Name  
-          
           <input type="text" 
             placeholder="Name" 
             className="form-input"
@@ -48,10 +55,7 @@ console.log(formData)
             value={formData.fullName}
             onChange={handleChange}/></label> 
 
-          
-
-          <label>Phone Number  
-              
+          <label>Phone Number         
             <input type="text" 
             placeholder="Mobile number" 
             className="form-input" 
@@ -60,34 +64,43 @@ console.log(formData)
             onChange={handleChange}/> </label>
            
            
-           <label>Email Address 
-            
+           <label>Email Address          
             <input type="email" 
+           
             placeholder="Email Address" 
             className="form-input" 
             name="email"
             value={formData.email}
-            onChange={handleChange}/> </label>
+            onChange={handleChange}
+            /> </label>
+                 
+           <label htmlFor="city">Select your city?</label>
+            <select 
+                id="city"
+                className="form-input" 
+                value={formData.city}
+                onChange={handleChange}
+                name="city">
+                <option value="">-- Choose --</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+            </select> 
+           <br></br>
+           <br></br>
+            <textarea 
+             className="form-input" 
+                value={formData.comments}
+                placeholder="add details"
+                onChange={handleChange}
+                name="comments"
+            />
             
-            <input type="hidden" 
-            name="_autoresponse" 
-            value="Hang on your consultation is booked and will get a call at the scheduled time please">
-            </input>
-            
-
-            <label>Time Slot     
-            <input type="datetime-local" 
-            className="form-input"
-            name="timeDate"
-            value={formData.timeDate}
-            onChange={handleChange}/></label>   
-            
-            <button className= "btn form-button"> Submit </button>
-        </div>
-         </form>
-
-      </div>
-
+     </div>
+   
+        <button className= "btn form-button"> Submit </button>
+        </form>  
+    </div>
+</div>
     )
 }
 
